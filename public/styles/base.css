@@ -45,11 +45,87 @@ a {
   margin-bottom: 20px;
 }
 
+.josh {
+  height: 100%;
+  overflow: hidden;
+}
+
 img {
-  display: none;
-  margin: auto;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 button {
   margin-top: 10px;
+}
+
+/*small screen sizes */
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*large screen sizes*/
+
+@media screen and (min-width: 1270px) {
+  .grid {
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    gap: 10px;
+  }
+
+  .col-1 {
+    flex-basis: 50%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    /* border: 1px solid red; */
+  }
+
+  .col-2 {
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+
+    /* align-items: space-between; */
+    /* background-color: beige; */
+    /* border: 1px solid red; */
+    gap: 0px;
+  }
+
+  .img-1 {
+    flex-basis: 49%;
+
+    /* background-color: burlywood; */
+  }
+
+  .img-2 {
+    flex-basis: 49%;
+    margin-left: 5px;
+    /* background-color: cornflowerblue; */
+  }
+
+  .img-3 {
+    flex-basis: 49%;
+
+    /* background-color: lightcoral; */
+  }
+
+  .img-4 {
+    flex-basis: 49%;
+    margin-left: 5px;
+
+    /* background-color: goldenrod; */
+  }
 }

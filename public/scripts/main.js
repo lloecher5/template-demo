@@ -1,6 +1,7 @@
-const button = document.querySelector("button");
-const image = document.querySelector("img");
+const images = document.querySelectorAll("img");
 
-button.addEventListener("click", () => {
-  image.style.display = "block";
+images.forEach((image) => {
+  image.addEventListener("click", () => {
+    alert(`This player is ${image.alt}.`);
+  });
 });
